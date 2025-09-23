@@ -1,0 +1,27 @@
+ # Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+venv/
+ENV/
+env/
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Downloads
+downloads/
+Git/
