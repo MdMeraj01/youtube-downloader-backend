@@ -221,7 +221,7 @@ def privacy():
 def terms():
     return render_template("terms.html")
 
+
 if __name__ == "__main__":
-    # Local dev: load port from env (Render provides PORT env var)
-    port = int(os.getenv("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=(os.getenv("FLASK_DEBUG","True")=="True"))
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
