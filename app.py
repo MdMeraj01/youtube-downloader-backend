@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 from flask import Flask, render_template, request, jsonify, send_file
 from flask_mail import Mail, Message
@@ -112,7 +111,7 @@ if __name__ == "__main__":
     # Local dev: load port from env (Render provides PORT env var)
     port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=(os.getenv("FLASK_DEBUG","True")=="True"))
-=======
+
 import os
 from flask import Flask, render_template, request, jsonify, send_file
 from flask_mail import Mail, Message
@@ -226,4 +225,3 @@ if __name__ == "__main__":
     # Local dev: load port from env (Render provides PORT env var)
     port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=(os.getenv("FLASK_DEBUG","True")=="True"))
->>>>>>> 0e7f951cb12a91f0556f3cc9eccf6088adac7d55
