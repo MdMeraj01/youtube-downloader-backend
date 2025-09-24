@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  # Python
 __pycache__/
 *.py[cod]
@@ -26,7 +25,7 @@ Thumbs.db
 # Downloads
 downloads/
 Git/
-=======
+
  # Python
 __pycache__/
 *.py[cod]
@@ -53,4 +52,6 @@ Thumbs.db
 
 # Downloads
 downloads/
->>>>>>> 0e7f951cb12a91f0556f3cc9eccf6088adac7d55
+
+cookies.txt
+youtube.com_cookies.txt
