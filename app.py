@@ -232,6 +232,19 @@ def terms():
     return render_template("terms.html")
 
 
+# Ensure downloads folder exists
+os.makedirs("downloads", exist_ok=True)
+
+# Write cookies.txt from environment variable (if provided)
+cookies_env = os.getenv("YT_COOKIES")
+if cookies_env:
+    with open("youtube.com_cookies.txt", "w", encoding="utf-8") as f:
+        f.write(cookies_env)
+    try:
+        os.chmod("youtube.com_cookies.txt", 0o600)  # secure permissions
+    except Exception:
+        pass
+
 if __name__ == "__main__":
     import os
 os.makedirs("downloads", exist_ok=True)  # ensure downloads folder exists on Render
