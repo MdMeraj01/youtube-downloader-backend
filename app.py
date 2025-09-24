@@ -191,7 +191,12 @@ def download_video():
     if not url:
         return jsonify({"error": "No URL provided"}), 400
 
-    ydl_opts = {"format": "bestvideo+bestaudio/best", "outtmpl": "downloads/%(title)s.%(ext)s"}
+    ydl_opts = {
+    "format": "bestvideo+bestaudio/best",
+    "outtmpl": "downloads/%(title)s.%(ext)s",
+    "cookiefile": "youtube.com_cookies.txt"   # 👈 tumhari asli file ka naam
+}
+
     os.makedirs("downloads", exist_ok=True)
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
